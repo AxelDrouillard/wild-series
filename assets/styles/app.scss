@@ -1,3 +1,28 @@
+@import "~bootstrap/scss/bootstrap";
+
+$primary: #29335C;
+$secondary: #F3A712;
+$footerColor: #E4572E;
+
 body {
-    background-color: blue;
+    background-color: $primary;
 }
+
+.nav-color {
+    background-color: $secondary;
+    color: $secondary;
+}
+
+.navlink {
+    text-decoration: none;
+    margin: 0px 5px 0px 5px;
+    color: $primary;
+    font-family: Inria Serif;
+    font-weight: 400;
+}
+
+.navbar-logo {
+    font-family: Inria Serif;
+}
+
+

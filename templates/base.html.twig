@@ -13,7 +13,12 @@
             {{ encore_entry_script_tags('app') }}
         {% endblock %}
     </head>
+    <header>
+        {% include '_navbar.html.twig' %}
+    </header>
     <body>
-        {% block body %}{% endblock %}
+        {% block body %}
+        <img src="{{ asset('build/path_to_image.png') }}" alt=""/>
+        {% endblock %}
     </body>
 </html>

@@ -15,7 +15,7 @@ import './bootstrap';
 
 // returns the final, public path to this file
 // path is relative to this file - e.g. assets/images/logo.png
-import logoPath from '../images/logo.png';
+import logoPath from './images/logo.png';
 
 let html = `<img src="${logoPath}" alt="ACME logo">`;
 
