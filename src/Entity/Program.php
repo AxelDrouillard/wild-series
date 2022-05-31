@@ -19,8 +19,13 @@ class Program
     #[ORM\Column(type: 'string', length: 255)]
     private $synopsis;
 
-    #[ORM\Column(type: 'string', length: 255)]
+    #[ORM\Column(type: 'string', length: 255, nullable: true)]
     private $poster;
+
+    public function __construct()
+  {
+    $this->poster= true;
+  }
 
     #[ORM\ManyToOne(targetEntity: Category::class)]
     #[ORM\JoinColumn(nullable: false)]
